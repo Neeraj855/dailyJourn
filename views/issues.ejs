@@ -1,0 +1,15 @@
+<%- include('./Partials/header.ejs'); %>
+
+<div class="box">
+    <h1>Journals List</h1>
+
+    <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, molestiae?"</p>
+
+    <% journals.forEach((journal)=>{ %>
+
+    <h2><%= journal.title %></h2>
+    <p><%= journal.content %></p>
+
+    <% }); %>
+</div>
+<%- include('./Partials/footer.ejs'); %>

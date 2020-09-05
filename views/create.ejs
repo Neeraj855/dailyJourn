@@ -1,0 +1,18 @@
+<%- include('./Partials/header.ejs'); %>
+
+<h2>Write a Journal</h2>
+
+<div class="box">
+    <form action="/create" method="POST">
+        <div class="form-group">
+            <label for="journalTitle">Title</label>
+            <input type="text" class="form-control" name="journalTitle">
+            <br>
+            <label for="journalBody">Journal</label>
+            <textarea type="text" class="form-control" cols="30" rows="5" name="journalBody"></textarea>
+            <br>
+            <button class="btn " type="submit">Publish</button>
+        </div>
+    </form>
+</div>
+<%- include('./Partials/footer.ejs'); %>

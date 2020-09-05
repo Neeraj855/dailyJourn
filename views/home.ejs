@@ -1,0 +1,24 @@
+<%- include('./Partials/header.ejs'); %>
+
+
+<h1>Home</h1>
+
+<p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, molestiae?"</p>
+
+<div class="box">
+    <% journals.forEach((journal)=>{ %>
+
+    <h2><%= journal.title %></h2>
+    <p>
+
+        <%= journal.content.substring(0, 100) + ' ... ' %>
+        <a href="/journals/<%= journal.title %>">Read More</a>
+
+    </p>
+
+
+    <% }); %>
+
+</div>
+
+<%- include('./Partials/footer.ejs'); %>
